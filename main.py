@@ -4,11 +4,12 @@ import os
 currentdir = os.path.dirname(os.path.realpath(__file__))
 parentdir = os.path.dirname(currentdir)
 sys.path.append(parentdir)
-from connect_mysql import *
-
+## from connect_mysql import *
+from oo.connet_db import ConnectionMysql
 ## importar variaveis de arquivo externo py - passa o nome do arquivo sem extensao
 from insert import *
 
+## cnx = ConnectionMysql()
 cursor = cnx.cursor()
 
 ## recebendo parametros
